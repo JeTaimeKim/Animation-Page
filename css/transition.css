@@ -1,0 +1,64 @@
+/*第一屏*/
+
+.screen-1 h1.start { top: 250px; opacity: 0; }
+.screen-1 article.start { top: 320px; opacity: 0; }
+header.start { top: -60px; opacity: 0; }
+.screen-1 h1.done,
+.screen-1 article.done,
+header.done { transform: translateY(0); opacity: 1; transition: all 1s; }
+
+/*第二屏*/
+
+.screen-2 h1.start,
+.screen-2 article.start { transform: translateY(100%); opacity: 0; }
+.screen-2 div.h1.start { transform: translateY(800%); opacity: 0; }
+.screen-2 h1.done,
+.screen-2 div.h1.done,
+.screen-2 article.done { transform: translateY(0); opacity: 1; transition: all 1s; }
+.screen-2 img.person.start { opacity: 0; }
+.screen-2 img.person.done { opacity: 1; transition: all 1s; }
+.screen-2 img.rocket.start { transform: translateY(400px); }
+.screen-2 img.rocket.done { -webkit-animation: backs 1s 1s backwards; }
+@-webkit-keyframes backs { 0% { transform: translateY(400px); } 80% { transform: translateY(-10px); } 90% { transform: translateY(8px); } 96% { transform: translateY(-5px); } 100% { transform: translateY(0); } }
+
+/*第三屏*/
+
+.screen-3 h1.start,
+.screen-3 article.start { transform: translateY(100%); opacity: 0; }
+.screen-3 div.h1.start { transform: translateY(800%); opacity: 0; }
+.screen-3 h1.done,
+.screen-3 div.h1.done,
+.screen-3 article.done { transform: translateY(0); opacity: 1; transition: all 1s; }
+.screen-3 img.elements.start { transform: translate(-70px, -170px) scale(.1); }
+.screen-3 img.elements.done { transform: translate(0) scale(1); transition: all .5s; }
+.screen-3 div.icon.start { transform: translateY(120px); opacity: 0; }
+.screen-3 div.icon.done { -webkit-animation: breath 1.5s 1s backwards; }
+@-webkit-keyframes breath { 0% { transform: translateY(120px); opacity: 0; } 25% { transform: translateY(-5px); opacity: 1; } 30% { transform: translateY(3px); } 33% { transform: translateY(-2px); } 35% { transform: translateY(0); } 55% { transform: scale3d(1, 1, 1); } 90% { transform: scale3d(1.02, 1.02, 1.02); } 100% { transform: scale3d(1, 1, 1); } }
+
+/*第四屏*/
+
+.screen-4 h1.start,
+.screen-4 article.start { transform: translateY(100%); opacity: 0; }
+.screen-4 div.h1.start { transform: translateY(800%); opacity: 0; }
+.screen-4 h1.done { transform: translateY(0); opacity: 1; transition: all 1s; }
+.screen-4 div.h1.done,
+.screen-4 article.done { transform: translateY(0); opacity: 1; transition: all 1s 1s; }
+.screen-4 div.pic div.pic-1.start,
+.screen-4 div.pic div.pic-2.start,
+.screen-4 div.pic div.pic-3.start,
+.screen-4 div.pic div.pic-4.start { transform: scale(.1); }
+.screen-4 div.pic div.pic-1.done,
+.screen-4 div.pic div.pic-2.done,
+.screen-4 div.pic div.pic-3.done,
+.screen-4 div.pic div.pic-4.done { transform: scale(1); transition: all 1s; }
+
+/*第五屏*/
+
+.screen-5 h1.start,
+.screen-5 article.start { transform: translateY(100%); opacity: 0; }
+.screen-5 div.h1.start { transform: translateY(800%); opacity: 0; }
+.screen-5 h1.done { transform: translateY(0); opacity: 1; transition: all 1s; }
+.screen-5 div.h1.done,
+.screen-5 article.done { transform: translateY(0); opacity: 1; transition: all 1s 1s; }
+.screen-5 img.head.start { transform: scale(.1); }
+.screen-5 img.head.done { transform: scale(1); transition: all .3s; }

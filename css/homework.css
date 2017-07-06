@@ -1,0 +1,90 @@
+* { margin: 0; padding: 0; border: none; }
+a { text-decoration: none; }
+section { height: 640px; position: relative; }
+div.content { width: 1200px; height: 650px; overflow: hidden; margin: 0 auto; }
+h1 { font-size: 40px; font-weight: bold; text-align: center; position: relative; }
+article { font-size: 20px; text-align: center; font-weight: 300; }
+input { cursor: pointer; }
+.active { color: #f00; }
+.activeHeader { background: rgba(255, 255, 255, .8); }
+.activeHeader div.logo,
+.activeHeader a { color: #000; font-weight: bold; }
+
+/*第一屏*/
+
+header { top: 0; height: 60px; width: 100%; overflow: hidden; position: fixed; z-index: 3; background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); }
+div.logo { height: 60px; float: left; text-indent: 60px; font-size: 18px; line-height: 60px; background: url("../img/logo.png") 10px center no-repeat; background-size: 40px 40px; color: #fff; cursor: pointer; }
+header>nav { float: right; position: relative; }
+header>nav>a { display: block; width: 55px; font-size: 12px; float: left; padding-right: 30px; line-height: 60px; color: #fff; font-weight: bold; }
+div.imp { width: 50px; height: 2px; background-color: #f00; position: absolute; top: 45px; left: 0; }
+input.nav { width: 95px; height: 40px; background-color: #f00; color: #fff; border-radius: 5px; display: block; margin-top: 10px; margin-right: 30px; }
+input.nav:hover { opacity: .8; }
+.screen-1 { background: url("../img/sc1.jpg") no-repeat; color: #fff; background-size: 100% 100%; }
+.screen-1 h1 { top: 200px; margin: 0 auto 35px; }
+.screen-1 article { position: absolute; width: 1200px; top: 290px; left: 50%; margin-left: -600px; }
+
+
+
+/*第二屏*/
+
+.screen-2 { background: #f3f5f7 url("../img/sc2.png") bottom center no-repeat; color: #000; }
+.screen-2 h1 { margin: 90px auto 35px; }
+.screen-2 div.h1 { content: ''; display: block; width: 50px; height: 3px; background-color: #f00; position: absolute; top: 160px; left: 50%; margin-left: -25px; }
+.screen-2 img.person { display: block; position: absolute; bottom: 0; left: 50%; margin-left: -138px; z-index: 2; }
+.screen-2 img.rocket { display: block; position: absolute; top: 50%; left: 50%; }
+
+/*第三屏*/
+
+.screen-3 { background: #2b333b; color: #fff; }
+.screen-3 .content { position: relative; }
+.screen-3 img.elements { display: block; size: 100%; position: absolute; left: 100px; top: 50%; margin-top: -170px; }
+.screen-3 h1 { margin-top: 220px; margin-bottom: 35px; margin-left: 500px; text-align: left; }
+.screen-3 div.h1 { content: ''; display: block; width: 50px; height: 3px; background-color: #f00; position: absolute; top: 290px; left: 500px; }
+.screen-3 article { text-align: left; margin-left: 500px; }
+.screen-3 div.icon { height: 70px; width: 530px; position: absolute; left: 500px; bottom: 50px; }
+.screen-3 div.icon div { float: left; width: 60px; height: 60px; border-radius: 50%; font-size: 12px; font-weight: 700; text-align: center; line-height: 60px; margin: auto 20px; }
+.screen-3 div.icon div.icon-1 { box-shadow: 0 0 0 3px rgba(39, 133, 242, .3); color: #2785f2; }
+.screen-3 div.icon div.icon-2 { box-shadow: 0 0 0 3px rgba(120, 136, 253, .3); color: #7888fd; }
+.screen-3 div.icon div.icon-3 { box-shadow: 0 0 0 3px rgba(241, 96, 84, .3); color: #f16054; }
+.screen-3 div.icon div.icon-4 { box-shadow: 0 0 0 3px rgba(39, 189, 229, .3); color: #27bde5; }
+.screen-3 div.icon div.icon-5 { box-shadow: 0 0 0 3px rgba(144, 189, 86, .3); color: #90bd56; }
+
+/*第四屏*/
+
+.screen-4 h1 { margin: 90px auto 35px; }
+.screen-4 div.h1 { content: ''; display: block; width: 50px; height: 3px; background-color: #f00; position: absolute; top: 160px; left: 50%; margin-left: -25px; }
+.screen-4 div.pic { width: 1200px; height: 120px; margin: 120px auto 0; overflow: hidden; }
+.screen-4 div.pic div { width: 200px; height: 120px; float: left; text-align: center; margin: 0 50px; position: relative; }
+.screen-4 div.pic div.pic-1 { background: url(../img/sc4-1.png) top center no-repeat; }
+.screen-4 div.pic div.pic-2 { background: url(../img/sc4-2.png) top center no-repeat; }
+.screen-4 div.pic div.pic-3 { background: url(../img/sc4-3.png) top center no-repeat; }
+.screen-4 div.pic div.pic-4 { background: url(../img/sc4-4.png) top center no-repeat; }
+.screen-4 div.pic div>div { height: 20px; width: 200px; position: absolute; bottom: 0; margin-left: auto; margin-right: auto; }
+
+/*第五屏*/
+
+.screen-5 { background: url("../img/sc5.jpg") no-repeat; background-size: 100% 100%; }
+.screen-5 div.h1 { content: ''; display: block; width: 50px; height: 3px; background-color: #fff; position: absolute; top: 420px; left: 50%; margin-left: -25px; }
+.screen-5 img { position: absolute; display: block; top: 100px; left: 50%; margin-left: -100px; }
+.screen-5 h1 { margin: 350px auto 35px; color: #fff; }
+.screen-5 article { color: #fff; }
+
+/*继续学习*/
+
+.screen { height: 200px; }
+.screen input { width: 240px; height: 60px; font-size: 14px; line-height: 60px; text-align: center; border-radius: 5px; border: 1px solid #000; background: transparent; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; }
+.screen input:hover { color: #f00; }
+
+/*侧边导航*/
+
+aside { width: 60px; height: 180px; position: fixed; right: 0; bottom: 150px; background: #fff; box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, .1); text-align: center; display: none; }
+aside nav { height: 140px; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; }
+aside a { display: block; margin: 6px auto 12px; font-size: 16px; height: 16px; width: 16px; line-height: 16px; color: #000; font-weight: 700; }
+aside a:hover { color: #f00; }
+
+/*页脚*/
+
+footer { height: 100px; background: #000; text-align: center; color: #787d82; font-size: 16px; line-height: 130px; position: relative; }
+footer nav { width: 560px; height: 30px; position: absolute; top: 25px; left: 0; right: 0; margin: auto; overflow: hidden; }
+footer nav a { display: block; width: 70px; height: 30px; float: left; color: #fff; font-size: 12px; line-height: 30px; }
+footer nav a:hover { color: #f00; }
