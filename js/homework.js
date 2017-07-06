@@ -196,7 +196,7 @@ window.onload = function() {
         }
 
 
-    //继续了解按钮（返回顶部）
+    //返回顶部
     var ctn = getElem('.ctn');
     ctn.onclick = function() {
         document.body.scrollTop = 0;
